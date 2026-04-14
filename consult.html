@@ -1,0 +1,205 @@
+<html>
+<head>
+  <title>Skin Consult | The Ordinary</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="top-announcement-bar">
+    <a href="shopnow.html">
+      <p>Free Shipping with a purchase of UV Filters SPF 45 Serum</p>
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-inner">
+      <a href="final project.html" class="nav-logo">
+        <img src="https://theordinary.com/on/demandware.static/Sites-deciem-us-Site/-/default/dwb94d8052/images/brands-logo/theOrdinary-logo.svg" alt="The Ordinary Logo">
+      </a>
+
+      <div class="nav-links">
+        <a href="final project.html">Home</a>
+        <a href="consult.html">Skin Consult</a>
+        <a href="guide.html">Product Guide</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<main class="consult-page">
+
+<!-- HERO -->
+
+<section class="consult-hero-text section">
+  <div class="container">
+    <h1>Find Your Perfect Routine</h1>
+    <p>
+      Answer a few simple questions and discover a skincare routine tailored to your needs.
+    </p>
+  </div>
+</section>
+<section class="consult-hero-image">
+  <img src="https://www.realsimple.com/thmb/q8BuyZUmIwtc7ICj9Gr-f-He9JU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/layer-skincare-GettyImages-1312712501-792d21a203a742a49f3061764a6fa194.jpg" alt="Skincare texture">
+</section>
+
+  <section class="consult-form-section section">
+    <div class="container">
+      <div class="consult-card">
+        <form id="skinConsultForm" class="consult-form">
+          
+          <div class="consult-group">
+            <label for="skin-type">What is your skin type?</label>
+            <select id="skin-type" name="skin-type" required>
+              <option value="">Select an option</option>
+              <option>Oily</option>
+              <option>Dry</option>
+              <option>Combination</option>
+              <option>Sensitive</option>
+              <option>Normal</option>
+            </select>
+          </div>
+
+          <div class="consult-group">
+            <label for="main-concern">What is your main skin concern?</label>
+            <select id="main-concern" name="main-concern" required>
+              <option value="">Select an option</option>
+              <option>Oiliness</option>
+              <option>Dryness</option>
+              <option>Acne</option>
+              <option>Uneven texture</option>
+              <option>Dullness</option>
+              <option>Sun protection</option>
+            </select>
+          </div>
+
+          <div class="consult-group">
+            <label for="routine-style">What kind of routine do you prefer?</label>
+            <select id="routine-style" name="routine-style" required>
+              <option value="">Select an option</option>
+              <option>Simple and minimal</option>
+              <option>Step-by-step routine</option>
+              <option>Fast morning routine</option>
+              <option>Results-focused routine</option>
+            </select>
+          </div>
+
+          <div class="consult-group">
+            <label for="makeup-use">Do you usually wear makeup during the day?</label>
+            <select id="makeup-use" name="makeup-use" required>
+              <option value="">Select an option</option>
+              <option>Yes, daily</option>
+              <option>Sometimes</option>
+              <option>Rarely</option>
+              <option>Never</option>
+            </select>
+          </div>
+
+          <div class="consult-group">
+            <label for="climate">What environment are you usually in?</label>
+            <select id="climate" name="climate" required>
+              <option value="">Select an option</option>
+              <option>Hot and humid</option>
+              <option>Mostly indoors</option>
+              <option>Outdoors often</option>
+              <option>Air-conditioned environments</option>
+            </select>
+          </div>
+
+          <button type="submit" class="consult-btn">See My Recommendation</button>
+        </form>
+
+          <div id="consultResult" class="consult-result hidden">
+
+            <div class="consult-result-grid">
+
+              <!-- LEFT: TEXT -->
+              <div class="consult-result-text">
+                <p class="consult-result-label">Your Recommended Product</p>
+                <h2>UV Filters SPF 45 Serum</h2>
+                <p>
+                  Based on your answers, we recommend our lightweight SPF serum for daily protection.
+                  It layers seamlessly into your routine and provides comfortable, invisible coverage.
+                </p>
+
+                <a href="shopnow.html" class="consult-result-link">
+                  Shop the SPF Serum →
+                </a>
+              </div>
+
+              <!-- RIGHT: IMAGE -->
+              <div class="consult-result-image">
+                <img src="images/Untitled_Artwork 2.png" alt="SPF Serum">
+              </div>
+
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  const form = document.getElementById("skinConsultForm");
+  const result = document.getElementById("consultResult");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    result.classList.remove("hidden");
+    result.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+</script>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-container">
+
+    <!-- COLUMN 1 -->
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <p>Join Us</p>
+      <p>Transparency</p>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="footer-column">
+      <h4>Customer Care</h4>
+      <p>FAQ</p>
+      <p>Return Policy</p>
+      <p>Terms & Conditions</p>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Track Order</p>
+      <p>Sign In</p>
+      <p>Store Locator</p>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM LINE -->
+  <div class="footer-bottom">
+    <p>
+      © 2026 The Ordinary · 
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</div>
